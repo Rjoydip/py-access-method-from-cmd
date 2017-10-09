@@ -13,6 +13,10 @@ $ python ./main.py
 
 Let's start with a simple implementation:
 
+#### Example 1
+
+Without decorator
+
 ```python
 #!/usr/bin/env python
 
@@ -39,4 +43,31 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         command, params = sys.argv[1], sys.argv[2:]
         options[command](*params)
+```
+
+#### Example 2
+
+Using decorator
+
+```python
+#!/usr/bin/env python
+
+from decorator import *
+
+# some function
+def some(params):
+    # print("This is some function")
+    print("This is some function with param: {}".format(params))
+    
+# other function
+def other():
+    print("This is other function")
+
+# main function
+@execute
+def main():
+    print("This is main function")
+
+if __name__ == "__main__":
+    main()
 ```
