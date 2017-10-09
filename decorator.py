@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
 import sys
-import inspect
 
 def execute(fn):
     def wrapper(*args, **kwargs):
