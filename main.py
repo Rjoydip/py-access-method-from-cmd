@@ -1,25 +1,20 @@
 #!/usr/bin/env python
 
-import sys
+from decorator import *
 
-# params function
-def params(*kwargs):
-    print(*kwargs)
-    print("This is params function with param: {}".format(*kwargs))
+# some function
+def some(params):
+    print("This is some function with param: {} {}".format(params))
     
 # other function
 def other():
     print("This is other function")
 
 # main function
+@execute
 def main():
     print("This is main function")
 
 if __name__ == "__main__":
-    options = {
-        "main": main,
-        "other": other,
-        "params": params
-    }
-    command, params = sys.argv[1], sys.argv[2:]
-    options[command](*params)
+    main()
+    

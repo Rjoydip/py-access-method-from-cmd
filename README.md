@@ -36,6 +36,7 @@ if __name__ == "__main__":
         "other": other,
         "something": something
     }
-    command, params = sys.argv[1], sys.argv[2:]
-    options[command](*params)
+    if len(sys.argv) > 1:
+        command, params = sys.argv[1], sys.argv[2:]
+        options[command](*params)
 ```
