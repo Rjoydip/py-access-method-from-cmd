@@ -4,7 +4,8 @@ from decorator import *
 
 # some function
 def some(params):
-    print("This is some function with param: {} {}".format(params))
+    # print("This is some function")
+    print("This is some function with param: {}".format(params))
     
 # other function
 def other():
