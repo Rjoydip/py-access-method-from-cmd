@@ -3,8 +3,8 @@
 from decorator import *
 
 # some function
-def some(params):
-    # print("This is some function")
+def some(params, foo=123, baz='bar'):
+    print(foo)
     print("This is some function with param: {}".format(params))
     
 # other function
