@@ -6,7 +6,6 @@
 ```sh
 $ git clone https://github.com/Rjoydip/py-delay-decorator.git # clone or fork
 $ cd py-delay-decorator
-$ python ./main.py
 ```
 
 ## Simpler implementation
@@ -56,8 +55,6 @@ from decorator import *
 
 # some function
 def some(params, foo=123, baz='bar'):
-    print(foo)
-    # print("This is some function")
     print("This is some function with param: {}".format(params))
     
 # other function
@@ -71,4 +68,14 @@ def main():
 
 if __name__ == "__main__":
     main()
+```
+
+#### def method_name(params[,args])
+
+If value pass form command line then it will get in 1st argumetns(`params`). If default arguments passes in method that can get 2nd arguments onwords, also method can pass `n` terms of arguments.
+
+#### Command
+
+```sh
+$ python ./main.py some -p 10
 ```

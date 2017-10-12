@@ -10,8 +10,6 @@ def execute(fn):
             methods = dir(module_name)
             nos_arg = getattr(module_name, methods[methods.index(method)]).__code__.co_argcount
             vars_name = getattr(module_name, methods[methods.index(method)]).__code__.co_varnames
-            defaults = getattr(module_name, methods[methods.index(method)]).__defaults__
-            print(defaults)
             if method in methods:
                 if nos_arg == 0:
                     getattr(module_name, methods[methods.index(method)])()
