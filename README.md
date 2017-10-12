@@ -55,7 +55,8 @@ Using decorator
 from decorator import *
 
 # some function
-def some(params):
+def some(params, foo=123, baz='bar'):
+    print(foo)
     # print("This is some function")
     print("This is some function with param: {}".format(params))
     
