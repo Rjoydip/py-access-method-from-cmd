@@ -1,11 +1,12 @@
-# py-method-cmd
-> Run python method from command line
+# py-hack-methods
+
+> Access/Hack all python methods from command line
 
 # Install locally
 
 ```sh
-$ git clone https://github.com/Rjoydip/py-delay-decorator.git # clone or fork
-$ cd py-delay-decorator
+$ git clone https://github.com/Rjoydip/py-hack-methods.git # clone or fork
+$ cd py-hack-methods
 ```
 
 ## Simpler implementation

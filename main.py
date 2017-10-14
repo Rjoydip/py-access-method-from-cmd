@@ -13,8 +13,7 @@ def other():
 # main function
 @execute
 def main():
-    pass
-    # print("This is main function")
+    print("This is main function")
 
 if __name__ == "__main__":
     main()
